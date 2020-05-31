@@ -1,5 +1,5 @@
 <div class="row">
-  <% if map_size(@character_map) > 0 do %>
+  <%= if map_size(@character_map) > 0 do %>
     <div class="col-12">
       <h1>Characters:</h1>
     </div>
