@@ -1,0 +1,20 @@
+<div class="row">
+  <% if map_size(@character_map) > 0 do %>
+    <div class="col-12">
+      <h1>Characters:</h1>
+    </div>
+  <% end %>
+  <%= for {character, counter} <- @character_map do %>
+    <div class="col-2 border">
+      <div class="row">
+        <div class="col">
+          <%= character %>
+        </div>
+        <div class="col">:</div>
+        <div class="col">
+          <%= counter %>
+        </div>
+      </div>
+    </div>
+  <% end %>
+</div>
